@@ -1,0 +1,83 @@
+/* Motion and art direction shared by the portfolio and client concepts. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity:0; transform:translateY(48px); transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.is-visible { opacity:1; transform:translateY(0); }
+  .hero .brand-nav { animation:arrive .9s .1s both; }
+  .hero h1,.hero .brasa-heading,.hero .aether-heading,.hero .ripe-copy,.hero .bocado-title { animation:arrive 1.1s .18s both; }
+  .hero .hero-foot,.hero .bruma-bottom,.hero .vyre-bottom,.hero .bruta-bottom,.hero .bocado-bottom { animation:arrive 1s .65s both; }
+  @keyframes arrive { from {opacity:0;transform:translateY(35px)} to {opacity:1;transform:translateY(0)} }
+  .low-panel { animation:slowZoom 19s ease-in-out infinite alternate; }
+  .low-center { animation-delay:-6s; }
+  .low-right { animation-delay:-11s; }
+  @keyframes slowZoom { from {background-position:48% 50%} to {background-position:55% 54%} }
+  .aura-image { animation:auraBreath 14s ease-in-out infinite alternate; }
+  @keyframes auraBreath {to {transform:scale(1.06);filter:grayscale(.1) brightness(.62)} }
+  .brasa-ring { animation:spinRing 35s linear infinite; }
+  @keyframes spinRing { to {transform:translate(-50%,-50%) rotate(360deg)} }
+  .brasa-cup { animation:coffeeRise 6s ease-in-out infinite alternate; }
+  @keyframes coffeeRise { to {transform:translate(-50%,-51.5%)} }
+  .coffee-word { animation:coffeeDrift 5s ease-in-out infinite alternate; }
+  @keyframes coffeeDrift {to {letter-spacing:.32em;opacity:.7} }
+  .bruma-figure { transition:filter .7s,transform .7s; }
+  .bruma-figures:hover .bruma-figure:not(:hover) {filter:blur(3px) grayscale(.4);transform:scale(.96)}
+  .ripe-glass { animation:ripeFloat 6s ease-in-out infinite alternate; }
+  @keyframes ripeFloat {to {transform:translateY(-22px) rotate(-2deg)} }
+  .ripe-fruit { animation:fruitFloat 4s ease-in-out infinite alternate; }
+  .fruit-two { animation-delay:-1.7s }.fruit-three { animation-delay:-3s }
+  @keyframes fruitFloat {to {transform:translateY(-24px) rotate(14deg)} }
+  .vyre-product { animation:hangSway 7s ease-in-out infinite alternate;transform-origin:top center; }
+  @keyframes hangSway {to {transform:translateX(-50%) rotate(2deg)} }
+  .bruta-burger { animation:burgerFloat 5s ease-in-out infinite alternate; }
+  @keyframes burgerFloat {to {transform:translate(-50%,-16px) rotate(-3deg)} }
+  .bocado-plate { transition:transform 1.1s cubic-bezier(.2,.7,.2,1); }
+  .hero-bocado:hover .bocado-plate {transform:translate(-50%,-50%) rotate(10deg)}
+  .aether-cards a:hover { transform:translateY(-18px) rotate(-1deg); }
+  .intro-line { animation:arrive 1.2s .16s both; }
+  .intro-middle {animation:arrive 1s .55s both}
+  .sticker {animation:stickerIn 1s .8s both,stickerFloat 5s 1.8s ease-in-out infinite alternate}
+  @keyframes stickerIn {from {opacity:0;transform:translateY(50px) rotate(-28deg)}to {opacity:1;transform:rotate(-14deg)}}
+  @keyframes stickerFloat {to {transform:translateY(-10px) rotate(-10deg)}}
+}
+/* Halvo's quiet, centered typography and blue accent. */
+.intro {min-height:690px;height:min(790px,calc(100svh - 90px))}
+.intro-line {font-size:clamp(68px,7vw,116px);letter-spacing:-.075em;line-height:1.04}
+.line-one,.line-two {transform:none}
+.line-two {margin-top:36px}
+.intro-middle {height:64px}
+.intro-middle p {margin:10px 0;font-size:12px}
+.sticker {left:17%;top:86px;width:118px;height:145px;z-index:6}
+.sticker img {height:105px}
+.work {padding-top:78px}
+.section-head {margin-bottom:65px}
+.section-head h2 {font-size:clamp(60px,7vw,115px)}
+.work-card .visual iframe {position:absolute;left:0;top:0;width:1500px;height:820px;transform:scale(var(--thumbnail-scale,.48));transform-origin:top left;border:0;pointer-events:none;background:var(--card-color);opacity:0;transition:opacity .5s}
+.work-card .visual {transition:transform .25s ease-out,box-shadow .3s}
+.work-card:hover .visual {box-shadow:0 26px 45px #0006}
+.work-card .visual img {position:absolute;inset:0}
+.work-card .visual iframe.ready {opacity:1}
+.work-card .visual-title {font:750 clamp(30px,3.5vw,58px)/1 "DM Sans",sans-serif;letter-spacing:-.07em;text-shadow:0 4px 20px #0009}
+.work-card .visual-label {text-shadow:0 2px 8px #000a}
+.work-card .visual:after {pointer-events:none}
+.stage-card.active {filter:brightness(1)}
+.stage-card:not(.active) {filter:brightness(.73)}
+/* Reference details: deep espresso, layered fashion, and quieter editorial composition. */
+.hero-brasa {background:#250704;color:#f6eee7}
+.hero-lowlight:before,.hero-aura:before,.hero-ripe:before {content:"";position:absolute;z-index:4;inset:0;pointer-events:none;background:radial-gradient(circle 340px at var(--px,55%) var(--py,45%),#ffffff0d,transparent 75%);mix-blend-mode:screen}
+.hero-brasa .brand-nav {padding-top:14px}
+.hero-brasa .brand {font-size:24px}
+.brasa-cup {border-width:0;width:min(53vw,690px);box-shadow:0 28px 90px #090101bb}
+.brasa-cup img {transform:scale(1.36)}
+.brasa-ring {border-color:#8c594066;box-shadow:0 0 0 42px #74422914,0 0 0 110px #7442290f}
+.coffee-word {color:#f5ded0}
+.brasa-beans {font-size:0;width:105px;height:155px;background:radial-gradient(ellipse at 28% 40%,#693015 0 10px,transparent 11px),radial-gradient(ellipse at 70% 22%,#51200b 0 15px,transparent 16px),radial-gradient(ellipse at 52% 80%,#9b5730 0 13px,transparent 14px);filter:drop-shadow(5px 8px 5px #100300)}
+.brasa-side {top:42%}
+.brasa-milk {position:absolute;z-index:6;right:-.3%;top:25%;width:13vw;height:42%;pointer-events:none;filter:drop-shadow(-17px 20px 10px #09010177)}
+.brasa-milk:before {content:"";position:absolute;right:8%;top:5%;width:52%;height:83%;border-radius:18px 18px 40px 40px;background:linear-gradient(100deg,#d9dfdf,#fff 38%,#c7d1d0 82%,#fff);border-top:16px solid #d6dddf;transform:rotate(-10deg)}
+.brasa-milk:after {content:"";position:absolute;left:0;bottom:0;width:55%;height:49%;border-radius:5px 5px 18px 18px;background:linear-gradient(100deg,#e6e6e6,#fff 35%,#c6d1d0 90%);border-top:6px solid #d3dce0;transform:rotate(-16deg)}
+.hero-bruma {background:#dfe4f8}
+.bruma-figure {overflow:visible;mask-image:radial-gradient(ellipse 73% 78% at 50% 50%,#000 58%,transparent 100%)}
+.bruma-figure img {object-fit:cover;mix-blend-mode:multiply}
+.bruma-giant {color:#aebfebaa}
+.hero-vyre .vyre-hangers span {font-size:0;width:2px;height:65px;background:#79574e;position:relative}
+.hero-vyre .vyre-hangers span:after {content:"";position:absolute;top:48px;left:-18px;width:38px;height:21px;border:2px solid #79574e;border-top:0;transform:rotate(45deg);border-radius:2px}
+@media(max-width:700px){.intro{height:calc(100svh - 74px);min-height:550px}.intro-line{font-size:12.2vw;line-height:1.03}.line-two{margin-top:24px}.intro-middle{height:60px}.intro-middle p{font-size:9px;padding-left:80px}.sticker{left:4%;top:48px;width:74px;height:95px}.sticker img{height:66px}.work{padding-top:70px}.section-head h2{font-size:12vw}.brasa-milk{width:24vw;top:30%;right:-5%;height:30%}.brasa-cup{width:91vw}.brasa-cup img{transform:scale(1.25)}.work-card .visual iframe{transform:scale(.25)}}
