@@ -9,11 +9,9 @@
 
   if (key === "lowlight") hero =
     '<section class="hero hero-lowlight" id="top">' + nav(false) +
-    '<div class="low-gallery"><div class="low-panel low-left" style="background-image:url(' + e(site.extra) + ')"></div><div class="low-panel low-center" style="background-image:url(' + e(site.image) + ')"></div><div class="low-panel low-right" style="background-image:url(' + e(site.extra) + ')"></div></div>' +
-    '<div class="low-topnote">A GOOD NIGHT BEGINS HERE <span>✳</span> LA MARSA, TUNISIA</div>' +
-    '<div class="low-wordmark"><span>LOW</span><span>LIGHT</span></div>' +
-    '<div class="low-caption"><p>COCKTAILS / MUSIC / AFTER DARK</p><h1>Stay for<br><i>one more.</i></h1><a href="#menu" class="round-arrow" aria-label="Explore the menu">↗</a></div>' +
-    '<div class="hero-foot"><span>01 / THE NIGHT</span><span>SCROLL TO EXPLORE ↓</span></div></section>';
+    '<div class="low-editorial"><div class="low-scene" style="background-image:url(' + e(site.extra) + ')"><div class="low-scene-shade"></div><div class="low-scene-copy"><span>THE ART OF AFTER DARK / LA MARSA</span><h1>The night,<br><em>hour by hour.</em></h1><p>Every hour has its own rhythm. Find yours here.</p></div></div>' +
+    '<div class="low-drink" style="background-image:url(' + e(site.image) + ')"><div class="low-drink-shade"></div><span class="low-drink-top">NOCTURNE <span>✳</span> EST. 2026</span><div class="low-drink-type"><span>MID</span><span>NIGHT</span><span>WIDE</span><span>AWAKE</span></div><a href="#menu" class="low-drink-link">DISCOVER THE MENU <span>↗</span></a></div></div>' +
+    '<div class="low-ticker"><span>COCKTAILS / MUSIC / AFTER DARK</span><span>THE NIGHT LOOKS BETTER FROM HERE</span><span>LA MARSA, TUNISIA</span></div></section>';
 
   if (key === "aura") hero =
     '<section class="hero hero-aura" id="top">' + nav(false) +
