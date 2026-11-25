@@ -1,0 +1,25 @@
+.design .detail-section{min-height:780px}
+.design .detail-heading h2{max-width:780px}
+.card-open{font:700 10px "DM Sans",sans-serif;letter-spacing:.12em;white-space:nowrap;align-self:end;margin-left:auto}
+.detail-card{cursor:pointer;transition:transform .35s}
+.detail-card:hover{transform:translateY(-8px)}
+.detail-card:focus-visible{outline:3px solid var(--theme-accent);outline-offset:7px}
+.detail-card .card-copy{align-items:start;flex-wrap:wrap}
+.design-brasa .detail-section{background:#f3e8d7;color:#2c100a}
+.design-brasa .card-media{border-radius:250px 250px 6px 6px}
+.design-lowlight .detail-card{border-color:#a9966a}.design-lowlight .card-media{filter:saturate(.7)}
+.design-aura .detail-grid{grid-template-columns:1.4fr 1fr 1fr}.design-aura .detail-card:first-child .card-media{height:480px}
+.design-bruma .detail-section{background:#dce3f6}.design-bruma .card-media{background:#c5cdea}
+.design-ripe .detail-section{background:#e4ebc2}.design-ripe .card-media{border-radius:190px 190px 24px 24px}
+.design-vyre .detail-section{background:#f3ddd1}.design-vyre .card-media{background:#e2bda9}
+.design-bruta .detail-section{background:#f7e9cc;color:#a92e22}.design-bruta .detail-heading h2{font-family:"Archivo Black",sans-serif;font-size:clamp(55px,6vw,100px);letter-spacing:-.08em}.design-bruta .card-media{border-radius:50%}
+.design-bocado .detail-section{background:#f4b897;color:#183920}.design-bocado .card-media{border-radius:45% 45% 4px 4px}
+.design-aether .detail-section{background:#e1e1e1}.design-aether .detail-grid{grid-template-columns:repeat(4,1fr)}.design-aether .card-media{height:340px;background:#c8c8c8}
+.concept-dialog{border:0;padding:0;background:#f6f2eb;color:#171714;width:min(880px,90vw);max-height:85svh;box-shadow:0 30px 100px #0009;overflow:visible}
+.concept-dialog::backdrop{background:#080808b9;backdrop-filter:blur(9px)}
+.concept-dialog[open]{display:grid;grid-template-columns:1fr 1fr;animation:dialogIn .35s both}
+@keyframes dialogIn{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}
+.dialog-close{position:absolute;z-index:5;right:13px;top:13px;width:42px;height:42px;border:0;border-radius:50%;background:#111;color:#fff;font-size:27px;cursor:pointer}
+.dialog-image{min-height:500px;background-size:cover;background-position:center}
+.dialog-copy{padding:8%;display:flex;flex-direction:column;justify-content:center}.dialog-copy small{font-size:10px;letter-spacing:.2em}.dialog-copy h2{font:400 clamp(48px,6vw,88px)/.95 "Bodoni Moda",serif;letter-spacing:-.07em;margin:35px 0 20px}.dialog-copy p{font-size:14px;line-height:1.7;max-width:300px}.dialog-copy a{align-self:flex-start;margin-top:40px;border-bottom:1px solid;padding-bottom:8px;font-size:11px;letter-spacing:.13em}
+@media(max-width:700px){.design-aura .detail-grid,.design-aether .detail-grid{grid-template-columns:1fr}.design-aether .card-media{height:370px}.concept-dialog[open]{display:block;overflow:auto}.dialog-image{min-height:260px;height:33vh}.dialog-copy{padding:25px}.dialog-copy h2{font-size:58px;margin:18px 0}.dialog-copy a{margin-top:15px}}
