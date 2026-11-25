@@ -19,8 +19,8 @@ const DESIGNS = {
   brasa: {
     title: "Brasa", category: "Café & bakery", brand: "CAFÉ NOURA", city: "La Marsa",
     line: "Good mornings start here.", intro: "Coffee worth slowing down for, fresh pastries, and a table waiting for you.",
-    accent: "#f18405", contact: "Explore the menu",
-    image: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=1500&q=90",
+    accent: "#68370d", contact: "Explore the menu",
+    image: "https://images.unsplash.com/photo-1643245253892-11f9af8a7306?w=1500&q=90",
     extra: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1000&q=85",
     items: [["01", "Cappuccino", "Rich espresso, silky milk"], ["02", "Morning pastry", "Baked fresh every day"], ["03", "Brunch", "Your favourite slow morning"]]
   },
