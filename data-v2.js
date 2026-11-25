@@ -37,7 +37,7 @@ const DESIGNS = {
     title: "Ripe", category: "Food & drink", brand: "PRESSÉ", city: "Tunis",
     line: "Fresh has a new flavour.", intro: "Fruit first. Nothing complicated. Just bright blends made to wake up your day.",
     accent: "#a8bb52", contact: "See the blends",
-    image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=1500&q=90",
+    image: "https://images.unsplash.com/photo-1712056407284-c1eda76e7bcd?w=1500&q=85",
     extra: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=1000&q=85",
     items: [["01", "Berry rush", "Strawberry · cherry · apple"], ["02", "Golden hour", "Mango · orange · ginger"], ["03", "Green glow", "Kiwi · mint · cucumber"]]
   },
@@ -45,7 +45,7 @@ const DESIGNS = {
     title: "Vyre", category: "Apparel", brand: "ATELIER 216", city: "Tunis",
     line: "Made to be worn your way.", intro: "An edit of essentials with a little more character. Small runs, considered details.",
     accent: "#e9c5b2", contact: "Explore the drop",
-    image: "https://images.unsplash.com/photo-1778671394516-8270eac13c42?w=1200&q=90",
+    image: "https://images.unsplash.com/photo-1666358068528-71679343eafe?w=1600&q=85",
     extra: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1000&q=85",
     items: [["01", "The essential tee", "Your daily uniform"], ["02", "The overshirt", "A little more texture"], ["03", "The next drop", "Coming soon"]]
   },
@@ -69,8 +69,8 @@ const DESIGNS = {
     title: "Aether", category: "E-commerce", brand: "NOVA STUDIO", city: "Tunis",
     line: "For wherever you go next.", intro: "The pieces you reach for again and again. A collection made to move with you.",
     accent: "#d1d1d1", contact: "Explore the collection",
-    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=900&q=85",
-    extra: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=85",
+    image: "https://images.unsplash.com/photo-1770649264116-7b1e778433ee?w=1000&q=85",
+    extra: "https://images.unsplash.com/photo-1768819001437-f5fb6c07fab4?w=1000&q=85",
     items: [["01", "Shell jacket", "The light layer"], ["02", "Everyday bomber", "Built to go further"], ["03", "Studio overshirt", "A fresh perspective"], ["04", "Weekend layer", "Ready when you are"]]
   }
 };

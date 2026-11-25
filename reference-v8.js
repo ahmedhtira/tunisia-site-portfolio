@@ -44,8 +44,8 @@
       <div class="ref-ripe-right"><h2>Blended fresh.<br>Poured cold.</h2><p>Whole fruit, no shortcuts. Made fresh when you are.</p><div class="ref-ripe-flavours"><button class="active" type="button" data-flavour="Banana Cream">01<br>CREAM</button><button type="button" data-flavour="Berry Rush">02<br>BERRY</button><button type="button" data-flavour="Golden Hour">03<br>GOLDEN</button><button type="button" data-flavour="Green Glow">04<br>GREEN</button></div></div>`,
     vyre: () => `
       <div class="ref-vyre-top"><span>ON THE RAIL</span><span>VYRE / EVERYDAY DEPARTMENT</span></div>
-      <div class="ref-vyre-rail"><div class="ref-vyre-line"></div>${Array.from({length:6},(_,i) => `<button type="button" aria-label="View garment ${i+1}" data-product="${i%3}"><span class="ref-vyre-hook"></span><span class="ref-vyre-shirt shirt-${i+1}"></span></button>`).join('')}</div>
-      <div class="ref-vyre-floor"><p>Six pieces. One rail.</p><h1>Made to be worn your way.</h1><a href="#menu">EXPLORE THE DROP ↗</a></div>`,
+      <div class="ref-vyre-rail" style="background-image:url('${s.image}')">${Array.from({length:5},(_,i) => `<button type="button" aria-label="View garment ${i+1}" data-product="${i%3}"></button>`).join('')}</div>
+      <div class="ref-vyre-floor"><p>Considered pieces. One rail.</p><h1>Made to be worn your way.</h1><a href="#menu">EXPLORE THE DROP ↗</a></div>`,
     bruta: () => `
       <div class="ref-bruta-paper"></div><div class="ref-bruta-outline">BURGERS</div>
       <span class="ref-bruta-script">very</span>

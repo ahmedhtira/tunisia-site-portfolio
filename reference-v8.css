@@ -1,5 +1,5 @@
 /* Independent compositions based on the visual direction of the selected references. */
-.reference-layout{height:100svh;min-height:760px;max-height:1080px}
+.reference-layout{height:100svh;min-height:640px;max-height:1080px}
 .reference-layout .brand-nav{z-index:20}
 .reference-layout h1,.reference-layout h2,.reference-layout p{margin:0}
 .reference-layout button{cursor:pointer}
@@ -12,8 +12,8 @@
 .hero-aura.reference-layout .brand-nav{color:#fff}
 .hero-aura.reference-layout .brand{font:500 21px "DM Sans",sans-serif;letter-spacing:-.05em}
 .ref-aura-kicker{position:absolute;z-index:3;top:16%;left:4%;right:4%;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.16em}
-.hero-aura.reference-layout .ref-aura-name{position:absolute;z-index:4;inset:23% 2% auto;text-align:left;font:300 clamp(100px,15vw,250px)/.76 "DM Sans",sans-serif;letter-spacing:-.095em;color:#fff;pointer-events:none}
-.ref-aura-name span{display:block}.ref-aura-name span:last-child{text-align:right;margin-top:14%}
+.hero-aura.reference-layout .ref-aura-name{position:absolute;z-index:4;inset:24% 2% auto;text-align:left;font:300 clamp(88px,12vw,190px)/.82 "DM Sans",sans-serif;letter-spacing:-.095em;color:#fff;pointer-events:none}
+.ref-aura-name span{display:block}.ref-aura-name span:last-child{text-align:right;margin-top:8%}
 .ref-aura-info{position:absolute;z-index:6;left:4%;bottom:12%;font-size:13px;line-height:1.5;max-width:240px}
 .ref-aura-info a{display:inline-block;margin-top:18px;border-bottom:1px solid #fff;padding-bottom:6px;font-size:10px;letter-spacing:.12em}
 .ref-aura-note{position:absolute;z-index:4;top:18%;right:4%;max-width:210px;text-align:right;font-size:12px;line-height:1.55}
@@ -32,8 +32,8 @@
 .ref-brasa-title small{font-size:10px;letter-spacing:.17em}
 .hero-brasa.reference-layout .ref-brasa-title h1{position:static;font:400 clamp(62px,7vw,118px)/1 "Bodoni Moda",serif;letter-spacing:-.06em;margin:4px 0}
 .ref-brasa-title p{font-size:13px;line-height:1.5}
-.ref-brasa-orbit{position:absolute;left:50%;top:80%;width:min(72vw,770px);aspect-ratio:1;border:1px solid #7833027a;border-radius:50%;transform:translate(-50%,-50%);display:flex;justify-content:space-around;padding:13px 12%;font-size:9px;letter-spacing:.14em}
-.ref-brasa-cup{position:absolute;z-index:4;top:88%;left:50%;width:min(57vw,650px);aspect-ratio:1;transform:translate(-50%,-50%);border:20px solid #faf3e7;border-radius:50%;overflow:hidden;box-shadow:0 28px 60px #58230080}
+.ref-brasa-orbit{position:absolute;left:50%;top:76%;width:min(68vw,730px);aspect-ratio:1;border:1px solid #7833027a;border-radius:50%;transform:translate(-50%,-50%);display:flex;justify-content:space-around;padding:13px 12%;font-size:9px;letter-spacing:.14em}
+.ref-brasa-cup{position:absolute;z-index:4;top:76%;left:50%;width:min(51vw,590px);aspect-ratio:1;transform:translate(-50%,-50%);border:20px solid #faf3e7;border-radius:50%;overflow:hidden;box-shadow:0 28px 60px #58230080}
 .ref-brasa-cup img{width:100%;height:100%;object-fit:cover;object-position:center}
 .ref-brasa-beans{position:absolute;z-index:5;top:39%;color:#602b0c;font-size:32px;letter-spacing:.2em;transform:rotate(-20deg)}
 .beans-left{left:4%}.beans-right{right:4%;transform:rotate(25deg)}
@@ -66,7 +66,7 @@
 .hero-ripe.reference-layout .ref-ripe-left h1{font:800 clamp(35px,3.6vw,60px)/.98 "DM Sans",sans-serif;letter-spacing:-.07em;margin:14px 0}
 .ref-ripe-left p,.ref-ripe-right p{font-size:13px;line-height:1.55;max-width:300px}
 .ref-ripe-left a{display:inline-block;margin-top:24px;border-radius:30px;background:#fff3d7;color:#3d2b14;padding:13px 19px;font-size:10px;font-weight:800}
-.ref-ripe-product{position:absolute;z-index:4;left:33%;top:25%;width:34%;height:75%;overflow:hidden;clip-path:polygon(20% 0,80% 0,98% 100%,2% 100%);filter:hue-rotate(var(--ripe-hue)) drop-shadow(0 25px 30px #2c160c8a)}
+.ref-ripe-product{position:absolute;z-index:4;left:33%;top:20%;width:34%;height:80%;overflow:hidden;mask-image:radial-gradient(ellipse 73% 83% at 50% 51%,#000 60%,transparent 100%);filter:hue-rotate(var(--ripe-hue)) drop-shadow(0 25px 30px #2c160c8a)}
 .ref-ripe-product img{width:100%;height:100%;object-fit:cover;object-position:center}
 .hero-ripe.reference-layout .ref-ripe-right h2{font:800 clamp(27px,2.8vw,47px)/1 "DM Sans",sans-serif;letter-spacing:-.06em;margin-bottom:14px}
 .ref-ripe-flavours{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:35px}
@@ -77,9 +77,11 @@
 .hero-vyre.reference-layout{background:#e9e5dc;color:#23211e}
 .hero-vyre.reference-layout .brand-nav{justify-content:center}.hero-vyre.reference-layout .brand-nav nav,.hero-vyre.reference-layout .nav-action{display:none}
 .ref-vyre-top{position:absolute;top:20%;left:15%;right:15%;display:flex;justify-content:center;gap:25px;font-size:9px;letter-spacing:.17em}
-.ref-vyre-rail{position:absolute;top:26%;left:11%;right:11%;height:54%;display:flex;justify-content:space-around}
-.ref-vyre-line{position:absolute;top:0;left:0;right:0;height:2px;background:#8c8980}
-.ref-vyre-rail button{position:relative;width:15%;height:100%;background:none;border:0}
+.ref-vyre-rail{position:absolute;top:25%;left:7%;right:7%;height:55%;display:flex;justify-content:space-around;background-size:cover;background-position:center 48%;filter:saturate(.65) contrast(.95);box-shadow:0 18px 45px #332d2418}
+.ref-vyre-rail button{position:relative;width:20%;height:100%;background:none;border:0;transition:background .25s}
+.ref-vyre-rail button:hover,.ref-vyre-rail button:focus-visible{background:#fff4}
+.ref-vyre-rail button:after{content:attr(aria-label);position:absolute;left:50%;bottom:5%;transform:translateX(-50%);white-space:nowrap;background:#24211c;color:white;padding:8px 10px;font-size:9px;letter-spacing:.1em;opacity:0;transition:opacity .2s}
+.ref-vyre-rail button:hover:after,.ref-vyre-rail button:focus-visible:after{opacity:1}
 .ref-vyre-hook{position:absolute;top:0;left:50%;width:2px;height:70px;background:#69675f}
 .ref-vyre-shirt{position:absolute;top:65px;left:0;width:100%;height:70%;clip-path:polygon(23% 0,38% 0,50% 7%,62% 0,77% 0,100% 20%,84% 34%,80% 100%,20% 100%,16% 34%,0 20%);background:linear-gradient(95deg,#eeeae2,#fff 40%,#d4d1ca);box-shadow:inset 25px 0 35px #7773}
 .shirt-2{background:linear-gradient(95deg,#d0c4a6,#f2e6cd,#b6a37c)}.shirt-3{background:linear-gradient(95deg,#d8d8d5,#fff,#aaa9a4)}.shirt-4{background:linear-gradient(95deg,#d5ccc4,#efe9e3,#a89d91)}.shirt-5{background:linear-gradient(95deg,#bebfba,#e1e3de,#90928c)}.shirt-6{background:linear-gradient(95deg,#e4d8c6,#f8f2e8,#baa68b)}
@@ -133,15 +135,15 @@
   .reference-layout{min-height:660px;height:100svh}
   .reference-layout .brand-nav{min-height:68px;padding:15px 5%}
   .ref-aura-kicker{top:13%;font-size:8px}.ref-aura-kicker span{display:none}
-  .hero-aura.reference-layout .ref-aura-name{top:26%;font-size:20vw}.ref-aura-name span:last-child{margin-top:55%}
+  .hero-aura.reference-layout .ref-aura-name{top:26%;font-size:18vw}.ref-aura-name span:last-child{margin-top:55%}
   .ref-aura-info{bottom:11%;font-size:10px}.ref-aura-note{display:none}.ref-aura-progress{width:75px;height:75px;right:5%;bottom:7%}.ref-aura-progress strong{font-size:20px}.ref-aura-progress span{font-size:6px}
   .ref-aura-hotspots button:nth-child(1){top:45%}.ref-aura-hotspots button:nth-child(2){top:58%}
-  .ref-brasa-title{top:16%}.ref-brasa-title p{font-size:10px;padding:0 8%}.ref-brasa-orbit{width:112vw;top:82%}.ref-brasa-cup{width:92vw;top:82%;border-width:12px}
+  .ref-brasa-title{top:16%}.ref-brasa-title p{font-size:10px;padding:0 8%}.ref-brasa-orbit{width:112vw;top:73%}.ref-brasa-cup{width:92vw;top:73%;border-width:12px}
   .ref-brasa-beans{font-size:18px;top:43%}.ref-brasa-top{display:none}
   .hero-bruma.reference-layout .brand-nav{right:0}.ref-bruma-editorial{display:block}.ref-bruma-stage{height:73%}.ref-bruma-stage>img{top:13%;left:14%;width:72%}.ref-bruma-ghost{font-size:22vw;top:28%}.ref-bruma-stage-foot{bottom:6%}.hero-bruma.reference-layout .ref-bruma-stage-foot h1{font-size:34px}.ref-bruma-stage-foot span{display:none}.ref-bruma-stage-foot a{font-size:8px}
   .ref-bruma-shop{height:27%;padding:10px 4%;display:flex;gap:10px;align-items:center}.ref-bruma-shop h2{display:none}.ref-bruma-shop button{min-width:33%;grid-template-columns:35px 1fr;grid-template-rows:1fr 1fr;height:100%;padding:4px;gap:4px}.ref-bruma-shop button>span{display:none}.ref-bruma-shop button img{width:35px;height:65px}.ref-bruma-shop button strong{font-size:8px}.ref-bruma-shop button small{font-size:6px}
   .ref-ripe-ghost{top:18%;font-size:20vw}.ref-ripe-left{top:22%;width:45%;left:5%}.hero-ripe.reference-layout .ref-ripe-left h1{font-size:32px}.ref-ripe-left p{font-size:9px}.ref-ripe-left a{font-size:8px;padding:10px}.ref-ripe-product{left:48%;top:22%;width:48%;height:52%}.ref-ripe-right{left:5%;right:5%;width:auto;top:auto;bottom:5%}.hero-ripe.reference-layout .ref-ripe-right h2{font-size:28px}.ref-ripe-right p{font-size:10px}.ref-ripe-flavours{margin-top:12px}.ref-ripe-flavours button{height:48px;font-size:8px}
-  .ref-vyre-top{top:18%;left:5%;right:5%;font-size:7px}.ref-vyre-rail{left:2%;right:2%;top:26%;height:52%}.ref-vyre-rail button{width:16%}.ref-vyre-hook{height:40px}.ref-vyre-shirt{top:39px;height:63%}.ref-vyre-floor{height:22%}.hero-vyre.reference-layout .ref-vyre-floor h1{font-size:37px}
+  .ref-vyre-top{top:18%;left:5%;right:5%;font-size:7px}.ref-vyre-rail{left:2%;right:2%;top:26%;height:52%}.ref-vyre-rail button{width:20%}.ref-vyre-floor{height:22%}.hero-vyre.reference-layout .ref-vyre-floor h1{font-size:37px}
   .ref-bruta-outline{top:22%;font-size:16vw;-webkit-text-stroke:2px}.ref-bruta-burger{top:35%;width:85vw;height:38%}.ref-bruta-script{top:34%;left:10%;font-size:54px}.ref-bruta-stamp{right:5%;top:38%;width:60px;height:60px;font-size:9px}.hero-bruta.reference-layout .ref-bruta-bottom h1{font-size:17vw}.ref-bruta-bottom{bottom:7%}
   .hero-bocado.reference-layout .ref-bocado-logo{top:25%;font-size:20vw}.ref-bocado-plates{inset:42% 0 0}.plate-main{width:80%;left:10%}.plate-left,.plate-right{width:45%;top:58%}.plate-left{left:-20%}.plate-right{right:-20%}.ref-bocado-bottom span{display:none}
   .ref-aether-copy{top:18%;width:55%}.hero-aether.reference-layout .ref-aether-copy h1{font-size:10vw}.ref-aether-copy p{font-size:10px}.ref-aether-copy a{font-size:8px}.ref-aether-models{right:-14%;width:70%;height:70%;top:26%}.ref-aether-foot{font-size:8px}.ref-aether-foot span{display:none}
