@@ -19,8 +19,8 @@ An original, responsive portfolio and nine fictional business concepts by Ahmed 
 ## Adapt a concept for a client
 
 1. In data-v2.js, edit the chosen object: brand, city, line, intro, image, extra, and items.
-2. The matching visual layout lives in demo-v2.js and its styles in demo-v2.css. Change those if a client needs a different structure.
-3. Replace the sample contact section with actual phone, WhatsApp, map, opening hours, and business links before publishing a client version.
+2. The Low Light opening lives in demo-v2.js and motion-v3.css. The other eight openings live in reference-v8.js and reference-v8.css. Shared page sections live in demo-v2.js, demo-v2.css, business-v3.js and business-v3.css.
+3. Replace the sample contact section with the client's real phone, WhatsApp, map, opening hours, and business links before publishing a client version. The demo contact button currently reaches Ahmed about adapting the concept.
 4. Copy this repository using GitHub's **Use this template**, then enable GitHub Pages from the default branch and share its URL.
 
 The old cafe, service, wellness, and shop demo URLs map to the new directions for compatibility. Photos are loaded from Unsplash and fonts from Google Fonts. Use the client's own licensed imagery for a final site. All business names and text here are fictional demos; these are not completed client projects or official Kolpu templates.

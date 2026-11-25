@@ -15,11 +15,13 @@
 .design-bruta .detail-section{background:#f7e9cc;color:#a92e22}.design-bruta .detail-heading h2{font-family:"Archivo Black",sans-serif;font-size:clamp(55px,6vw,100px);letter-spacing:-.08em}.design-bruta .card-media{border-radius:50%}
 .design-bocado .detail-section{background:#f4b897;color:#183920}.design-bocado .card-media{border-radius:45% 45% 4px 4px}
 .design-aether .detail-section{background:#e1e1e1}.design-aether .detail-grid{grid-template-columns:repeat(4,1fr)}.design-aether .card-media{height:340px;background:#c8c8c8}
+.contact-section .concept-email{background:#191919;color:#fff;border-color:#191919;margin-right:10px}
+.contact-section .concept-email:hover{background:transparent;color:#191919}
 .concept-dialog{border:0;padding:0;background:#f6f2eb;color:#171714;width:min(880px,90vw);max-height:85svh;box-shadow:0 30px 100px #0009;overflow:visible}
 .concept-dialog::backdrop{background:#080808b9;backdrop-filter:blur(9px)}
 .concept-dialog[open]{display:grid;grid-template-columns:1fr 1fr;animation:dialogIn .35s both}
 @keyframes dialogIn{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}
 .dialog-close{position:absolute;z-index:5;right:13px;top:13px;width:42px;height:42px;border:0;border-radius:50%;background:#111;color:#fff;font-size:27px;cursor:pointer}
 .dialog-image{min-height:500px;background-size:cover;background-position:center}
-.dialog-copy{padding:8%;display:flex;flex-direction:column;justify-content:center}.dialog-copy small{font-size:10px;letter-spacing:.2em}.dialog-copy h2{font:400 clamp(48px,6vw,88px)/.95 "Bodoni Moda",serif;letter-spacing:-.07em;margin:35px 0 20px}.dialog-copy p{font-size:14px;line-height:1.7;max-width:300px}.dialog-copy a{align-self:flex-start;margin-top:40px;border-bottom:1px solid;padding-bottom:8px;font-size:11px;letter-spacing:.13em}
+.dialog-copy{padding:8%;display:flex;flex-direction:column;justify-content:center;min-width:0}.dialog-copy small{font-size:10px;letter-spacing:.2em}.dialog-copy h2{font:400 clamp(42px,4.5vw,68px)/.98 "Bodoni Moda",serif;letter-spacing:-.07em;margin:35px 0 20px;overflow-wrap:break-word}.dialog-copy p{font-size:14px;line-height:1.7;max-width:300px}.dialog-copy a{align-self:flex-start;margin-top:40px;border-bottom:1px solid;padding-bottom:8px;font-size:11px;letter-spacing:.13em}
 @media(max-width:700px){.design-aura .detail-grid,.design-aether .detail-grid{grid-template-columns:1fr}.design-aether .card-media{height:370px}.concept-dialog[open]{display:block;overflow:auto}.dialog-image{min-height:260px;height:33vh}.dialog-copy{padding:25px}.dialog-copy h2{font-size:58px;margin:18px 0}.dialog-copy a{margin-top:15px}}

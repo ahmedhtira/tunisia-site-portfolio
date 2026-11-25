@@ -13,7 +13,7 @@
 .hero-aura.reference-layout .brand{font:500 21px "DM Sans",sans-serif;letter-spacing:-.05em}
 .ref-aura-kicker{position:absolute;z-index:3;top:16%;left:4%;right:4%;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.16em}
 .hero-aura.reference-layout .ref-aura-name{position:absolute;z-index:4;inset:24% 2% auto;text-align:left;font:300 clamp(88px,12vw,190px)/.82 "DM Sans",sans-serif;letter-spacing:-.095em;color:#fff;pointer-events:none}
-.ref-aura-name span{display:block}.ref-aura-name span:last-child{text-align:right;margin-top:8%}
+.ref-aura-name span{display:block}.ref-aura-name span:last-child{text-align:right;margin-top:3%}
 .ref-aura-info{position:absolute;z-index:6;left:4%;bottom:12%;font-size:13px;line-height:1.5;max-width:240px}
 .ref-aura-info a{display:inline-block;margin-top:18px;border-bottom:1px solid #fff;padding-bottom:6px;font-size:10px;letter-spacing:.12em}
 .ref-aura-note{position:absolute;z-index:4;top:18%;right:4%;max-width:210px;text-align:right;font-size:12px;line-height:1.55}
@@ -32,8 +32,8 @@
 .ref-brasa-title small{font-size:10px;letter-spacing:.17em}
 .hero-brasa.reference-layout .ref-brasa-title h1{position:static;font:400 clamp(62px,7vw,118px)/1 "Bodoni Moda",serif;letter-spacing:-.06em;margin:4px 0}
 .ref-brasa-title p{font-size:13px;line-height:1.5}
-.ref-brasa-orbit{position:absolute;left:50%;top:76%;width:min(68vw,730px);aspect-ratio:1;border:1px solid #7833027a;border-radius:50%;transform:translate(-50%,-50%);display:flex;justify-content:space-around;padding:13px 12%;font-size:9px;letter-spacing:.14em}
-.ref-brasa-cup{position:absolute;z-index:4;top:76%;left:50%;width:min(51vw,590px);aspect-ratio:1;transform:translate(-50%,-50%);border:20px solid #faf3e7;border-radius:50%;overflow:hidden;box-shadow:0 28px 60px #58230080}
+.ref-brasa-orbit{position:absolute;left:50%;top:82%;width:min(68vw,730px);aspect-ratio:1;border:1px solid #7833027a;border-radius:50%;transform:translate(-50%,-50%);display:flex;justify-content:space-around;padding:13px 12%;font-size:9px;letter-spacing:.14em}
+.ref-brasa-cup{position:absolute;z-index:4;top:82%;left:50%;width:min(51vw,590px);aspect-ratio:1;transform:translate(-50%,-50%);border:20px solid #faf3e7;border-radius:50%;overflow:hidden;box-shadow:0 28px 60px #58230080}
 .ref-brasa-cup img{width:100%;height:100%;object-fit:cover;object-position:center}
 .ref-brasa-beans{position:absolute;z-index:5;top:39%;color:#602b0c;font-size:32px;letter-spacing:.2em;transform:rotate(-20deg)}
 .beans-left{left:4%}.beans-right{right:4%;transform:rotate(25deg)}
@@ -66,7 +66,7 @@
 .hero-ripe.reference-layout .ref-ripe-left h1{font:800 clamp(35px,3.6vw,60px)/.98 "DM Sans",sans-serif;letter-spacing:-.07em;margin:14px 0}
 .ref-ripe-left p,.ref-ripe-right p{font-size:13px;line-height:1.55;max-width:300px}
 .ref-ripe-left a{display:inline-block;margin-top:24px;border-radius:30px;background:#fff3d7;color:#3d2b14;padding:13px 19px;font-size:10px;font-weight:800}
-.ref-ripe-product{position:absolute;z-index:4;left:33%;top:20%;width:34%;height:80%;overflow:hidden;mask-image:radial-gradient(ellipse 73% 83% at 50% 51%,#000 60%,transparent 100%);filter:hue-rotate(var(--ripe-hue)) drop-shadow(0 25px 30px #2c160c8a)}
+.ref-ripe-product{position:absolute;z-index:4;left:33%;top:20%;width:34%;height:80%;overflow:hidden;border-radius:48% 48% 0 0;filter:hue-rotate(var(--ripe-hue)) drop-shadow(0 25px 30px #2c160c8a)}
 .ref-ripe-product img{width:100%;height:100%;object-fit:cover;object-position:center}
 .hero-ripe.reference-layout .ref-ripe-right h2{font:800 clamp(27px,2.8vw,47px)/1 "DM Sans",sans-serif;letter-spacing:-.06em;margin-bottom:14px}
 .ref-ripe-flavours{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:35px}
@@ -138,7 +138,7 @@
   .hero-aura.reference-layout .ref-aura-name{top:26%;font-size:18vw}.ref-aura-name span:last-child{margin-top:55%}
   .ref-aura-info{bottom:11%;font-size:10px}.ref-aura-note{display:none}.ref-aura-progress{width:75px;height:75px;right:5%;bottom:7%}.ref-aura-progress strong{font-size:20px}.ref-aura-progress span{font-size:6px}
   .ref-aura-hotspots button:nth-child(1){top:45%}.ref-aura-hotspots button:nth-child(2){top:58%}
-  .ref-brasa-title{top:16%}.ref-brasa-title p{font-size:10px;padding:0 8%}.ref-brasa-orbit{width:112vw;top:73%}.ref-brasa-cup{width:92vw;top:73%;border-width:12px}
+  .ref-brasa-title{top:16%}.ref-brasa-title p{font-size:10px;padding:0 8%}.ref-brasa-orbit{width:112vw;top:78%}.ref-brasa-cup{width:92vw;top:78%;border-width:12px}
   .ref-brasa-beans{font-size:18px;top:43%}.ref-brasa-top{display:none}
   .hero-bruma.reference-layout .brand-nav{right:0}.ref-bruma-editorial{display:block}.ref-bruma-stage{height:73%}.ref-bruma-stage>img{top:13%;left:14%;width:72%}.ref-bruma-ghost{font-size:22vw;top:28%}.ref-bruma-stage-foot{bottom:6%}.hero-bruma.reference-layout .ref-bruma-stage-foot h1{font-size:34px}.ref-bruma-stage-foot span{display:none}.ref-bruma-stage-foot a{font-size:8px}
   .ref-bruma-shop{height:27%;padding:10px 4%;display:flex;gap:10px;align-items:center}.ref-bruma-shop h2{display:none}.ref-bruma-shop button{min-width:33%;grid-template-columns:35px 1fr;grid-template-rows:1fr 1fr;height:100%;padding:4px;gap:4px}.ref-bruma-shop button>span{display:none}.ref-bruma-shop button img{width:35px;height:65px}.ref-bruma-shop button strong{font-size:8px}.ref-bruma-shop button small{font-size:6px}

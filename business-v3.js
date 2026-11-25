@@ -20,7 +20,13 @@
   const contact=document.querySelector('.contact-section');
   contact.querySelector('h2').innerHTML=content.contact.replace(/\.$/,'')+'<em>.</em>';
   contact.querySelector('.demo-note').textContent='A visual concept by Ahmed Htira. Your name, content, imagery and contact details can make this site yours.';
-  contact.querySelector('a').textContent='EXPLORE MORE DESIGNS ↗';
+  const more=contact.querySelector('a');
+  more.textContent='EXPLORE MORE DESIGNS ↗';
+  const email=document.createElement('a');
+  email.className='concept-email';
+  email.href='mailto:ahmedhtira1234@gmail.com?subject='+encodeURIComponent('Website concept: '+site.title);
+  email.textContent='MAKE A SITE LIKE THIS ↗';
+  more.before(email);
   detail.querySelectorAll('.detail-card').forEach((card,i)=>{
     card.setAttribute('tabindex','0');card.setAttribute('role','button');
     card.setAttribute('aria-label','View '+site.items[i][1]);
@@ -35,7 +41,9 @@
   dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
   dialog.querySelector('a').addEventListener('click',()=>dialog.close());
   function open(i){
-    const item=site.items[i];dialog.querySelector('.dialog-image').style.backgroundImage='url("'+(i%2?site.extra:site.image)+'")';
+    const item=site.items[i];
+    const image=i===0?site.image:i===1?site.extra:(site.thirdImage||site.image);
+    dialog.querySelector('.dialog-image').style.backgroundImage='url("'+image+'")';
     dialog.querySelector('small').textContent=content.label+' / '+String(i+1).padStart(2,'0');
     dialog.querySelector('h2').textContent=item[1];dialog.querySelector('p').textContent=item[2]+'. '+site.intro;
     dialog.showModal();
