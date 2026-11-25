@@ -78,6 +78,8 @@ const DESIGNS = {
     accent: "#d1d1d1", contact: "Explore the collection",
     image: "https://images.unsplash.com/photo-1770649264116-7b1e778433ee?w=1000&q=85",
     extra: "https://images.unsplash.com/photo-1768819001437-f5fb6c07fab4?w=1000&q=85",
+    thirdImage: "https://images.unsplash.com/photo-1731484636518-23508e988f5f?w=1000&q=85",
+    fourthImage: "https://images.unsplash.com/photo-1734203313707-944a22f8268f?w=1000&q=85",
     items: [["01", "Shell jacket", "The light layer"], ["02", "Everyday bomber", "Built to go further"], ["03", "Studio overshirt", "A fresh perspective"], ["04", "Weekend layer", "Ready when you are"]]
   }
 };

@@ -42,7 +42,7 @@
   dialog.querySelector('a').addEventListener('click',()=>dialog.close());
   function open(i){
     const item=site.items[i];
-    const image=i===0?site.image:i===1?site.extra:(site.thirdImage||site.image);
+    const image=[site.image,site.extra,site.thirdImage||site.image,site.fourthImage||site.extra][i];
     dialog.querySelector('.dialog-image').style.backgroundImage='url("'+image+'")';
     dialog.querySelector('small').textContent=content.label+' / '+String(i+1).padStart(2,'0');
     dialog.querySelector('h2').textContent=item[1];dialog.querySelector('p').textContent=item[2]+'. '+site.intro;

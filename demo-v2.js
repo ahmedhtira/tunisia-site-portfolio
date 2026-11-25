@@ -70,7 +70,7 @@
     '<div class="aether-cards">' + site.items.map((item, i) => '<a href="#menu"><span>0' + (i + 1) + '</span><div>' + photo(i % 2 ? site.extra : site.image, "", item[1]) + '</div><strong>' + e(item[1]) + '</strong><small>VIEW PIECE ↗</small></a>').join("") + '</div></section>';
 
   const itemCards = site.items.map((item, i) =>
-    '<article class="detail-card"><div class="card-index">' + e(item[0]) + '</div><div class="card-media">' + photo(i === 0 ? site.image : i === 1 ? site.extra : (site.thirdImage || site.image), "", item[1]) + '</div><div class="card-copy"><h3>' + e(item[1]) + '</h3><p>' + e(item[2]) + '</p></div></article>'
+    '<article class="detail-card"><div class="card-index">' + e(item[0]) + '</div><div class="card-media">' + photo([site.image,site.extra,site.thirdImage || site.image,site.fourthImage || site.extra][i], "", item[1]) + '</div><div class="card-copy"><h3>' + e(item[1]) + '</h3><p>' + e(item[2]) + '</p></div></article>'
   ).join("");
   const page = '<div class="design design-' + key + '" style="--theme-accent:' + e(site.accent) + '">' +
     hero +

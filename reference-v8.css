@@ -1,6 +1,7 @@
 /* Independent compositions based on the visual direction of the selected references. */
 .reference-layout{height:100svh;min-height:640px;max-height:1080px}
 .reference-layout .brand-nav{z-index:20}
+.reference-layout .brand-nav,.reference-layout h1{animation:none!important}
 .reference-layout h1,.reference-layout h2,.reference-layout p{margin:0}
 .reference-layout button{cursor:pointer}
 .reference-layout a:focus-visible,.reference-layout button:focus-visible{outline:3px solid #fff;outline-offset:4px}
