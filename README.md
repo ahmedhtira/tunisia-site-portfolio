@@ -1,35 +1,27 @@
-# Tunisia site portfolio
-
-Four original, responsive website concepts for pitching local businesses. Every example is fictional. The portfolio is at `index.html`; each preview uses `demo.html?demo=KEY`.
+# Website concepts for Tunisian businesses
 
 **[Open the live portfolio](https://ahmedhtira.github.io/tunisia-site-portfolio/)**
 
-| Client-facing demo | Live link |
-| --- | --- |
-| Café / restaurant | [Café Noura](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=cafe) |
-| Professional services | [Atlas Services](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=service) |
-| Beauty / wellness | [Maison Zina](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=wellness) |
-| Product showcase | [Atelier Sable](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=shop) |
+An original, responsive portfolio and nine fictional business concepts by Ahmed Htira. The portfolio's visual direction is inspired by Kolpu's Halvo preview. Each demo has its own composition inspired by the named Kolpu preview, with independently written code, sample copy, and photography.
 
-| Key | Starting point | Suitable for |
+| Direction | Intended business | Live concept |
 | --- | --- | --- |
-| `cafe` | Warm editorial | Cafés, restaurants, bakeries |
-| `service` | Clean architectural | Agencies, consultants, trades, professional services |
-| `wellness` | Soft editorial | Salons, spas, wellness studios |
-| `shop` | Product led | Boutiques, makers, product showcases |
+| Low Light | Cocktail bar / nightlife | [NOCTURNE](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=lowlight) |
+| Aura Residencies | Property / real estate | [AURA](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=aura) |
+| Brasa | Caf� / bakery | [CAF� NOURA](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=brasa) |
+| Bruma | Fashion store | [MIRA](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=bruma) |
+| Ripe | Juice bar / food and drink | [PRESS�](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=ripe) |
+| Vyre | Apparel | [ATELIER 216](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=vyre) |
+| bruta | Burger restaurant | [BUN CLUB](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=bruta) |
+| Bocado | Restaurant / brunch | [BISTRO BAYA](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=bocado) |
+| Aether | Clothing e-commerce | [NOVA STUDIO](https://ahmedhtira.github.io/tunisia-site-portfolio/demo.html?demo=aether) |
 
-## Make a client version
+## Adapt a concept for a client
 
-1. Copy an object in `sites.js` and give it a new key, e.g. `client-name`.
-2. Replace all sample text, photos, opening hours, and address. Keep `<em>...</em>` around the highlighted part of `heading`.
-3. Set `whatsapp` to a number in international format (example: `216XXXXXXXX`), or `phone` to a dialable number. Set `maps` and `instagram` to full `https://` links if needed. Leave fields empty when unavailable.
-4. Share `demo.html?demo=client-name`. The code uses the copied object's `kind` to select its visual style.
-5. Change the language or writing to match the client. These examples use French, but any text can be replaced with Arabic or English; an Arabic version also needs `dir="rtl"` and appropriate layout testing.
+1. In data-v2.js, edit the chosen object: brand, city, line, intro, image, extra, and items.
+2. The matching visual layout lives in demo-v2.js and its styles in demo-v2.css. Change those if a client needs a different structure.
+3. Replace the sample contact section with actual phone, WhatsApp, map, opening hours, and business links before publishing a client version.
+4. Copy this repository using GitHub's **Use this template**, then enable GitHub Pages from the default branch and share its URL.
 
-All sample names and descriptions are invented. Don't present a demo as a completed client project. Contact buttons in the samples scroll to the contact section until real contact details are set.
+The old cafe, service, wellness, and shop demo URLs map to the new directions for compatibility. Photos are loaded from Unsplash and fonts from Google Fonts. Use the client's own licensed imagery for a final site. All business names and text here are fictional demos; these are not completed client projects or official Kolpu templates.
 
-## Publishing
-
-This repository is configured as a GitHub template and publishes from `main` at `/(root)` through GitHub Pages. Its links use relative paths so copies also work under a repository path. Use **Use this template** to create a fresh repo for a client, edit `sites.js`, then enable Pages in that repo's settings.
-
-Photography is loaded from Unsplash URLs and fonts from Google Fonts. A production client version should use photos supplied by the business or properly licensed assets and optimize them locally. This is an original implementation inspired by broad editorial, service, and product site patterns; it does not contain Kolpu prompts or their restricted assets.
