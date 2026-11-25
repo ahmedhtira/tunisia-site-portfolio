@@ -16,7 +16,7 @@ const DESIGNS = {
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=85",
     extra: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000&q=85",
     thirdImage: "https://images.unsplash.com/photo-1721134111286-b3c4a5772ea9?w=1000&q=85",
-    items: [["01", "The architecture", "Considered from every angle"], ["02", "The spaces", "Room to live beautifully"], ["03", "The neighbourhood", "Connected to everything"]]
+    items: [["01", "The architecture", "Considered from every angle"], ["02", "The spaces", "Room to live beautifully"], ["03", "The details", "Designed for everyday life"]]
   },
   brasa: {
     title: "Brasa", category: "Café & bakery", brand: "CAFÉ NOURA", city: "La Marsa",
@@ -80,7 +80,7 @@ const DESIGNS = {
     extra: "https://images.unsplash.com/photo-1768819001437-f5fb6c07fab4?w=1000&q=85",
     thirdImage: "https://images.unsplash.com/photo-1731484636518-23508e988f5f?w=1000&q=85",
     fourthImage: "https://images.unsplash.com/photo-1734203313707-944a22f8268f?w=1000&q=85",
-    items: [["01", "Shell jacket", "The light layer"], ["02", "Everyday bomber", "Built to go further"], ["03", "Studio overshirt", "A fresh perspective"], ["04", "Weekend layer", "Ready when you are"]]
+    items: [["01", "Leather jacket", "A sharp everyday layer"], ["02", "Puffer jacket", "Warm without the weight"], ["03", "Tailored coat", "Clean lines, easy movement"], ["04", "Studio blazer", "A fresh approach to layering"]]
   }
 };
 const ALIASES = { cafe: "brasa", service: "aura", wellness: "lowlight", shop: "bruma" };

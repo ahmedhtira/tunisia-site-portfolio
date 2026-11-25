@@ -10,7 +10,7 @@
     vyre:{label:'THE DROP',heading:'Everyday, reimagined.',story:'Made to be worn your way.',contact:'Discover the drop.',cta:'See the pieces'},
     bruta:{label:'THE MENU',heading:'The good stuff, stacked.',story:'Good food does the talking.',contact:'Bring your appetite.',cta:'See the burgers'},
     bocado:{label:'THE MENU',heading:'Good food for good company.',story:'Every table has a story.',contact:'Pull up a chair.',cta:'See the plates'},
-    aether:{label:'THE COLLECTION',heading:'Four shells. One bench.',story:'Made for the move.',contact:'Find your layer.',cta:'Explore the pieces'}
+    aether:{label:'THE COLLECTION',heading:'Four layers. One direction.',story:'Made for the move.',contact:'Find your layer.',cta:'Explore the pieces'}
   }[key];
   const detail=document.querySelector('.detail-section');
   const title=detail.querySelector('h2');title.innerHTML=content.heading.replace(/\.$/,'')+'<em>.</em>';
