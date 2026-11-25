@@ -27,7 +27,7 @@
   if (key === "brasa") hero =
     '<section class="hero hero-brasa" id="top">' + nav(false) +
     '<div class="brasa-heading"><small>YOUR NEW FAVOURITE RITUAL</small><h1>Cappuccino</h1><p>Equal parts espresso, milk and silky foam.<br>The classic balance for a calm start to your day.</p></div>' +
-    '<div class="brasa-ring"></div><div class="brasa-cup">' + photo(site.image, "", "Cappuccino with latte art") + '</div>' +
+    '<div class="brasa-ring"></div><div class="brasa-cup">' + photo(site.image, "", "Cappuccino with latte art") + '</div><div class="brasa-milk" aria-hidden="true"></div>' +
     '<span class="coffee-word word-one">MOCHA</span><span class="coffee-word word-two">ESPRESSO</span><span class="coffee-word word-three">LATTE</span>' +
     '<div class="brasa-beans">✺<br>✺</div><div class="brasa-side">MADE FRESH<br>EVERY DAY<br>↘</div>' +
     '<a class="brasa-next" href="#menu" aria-label="Explore menu">→</a><div class="hero-foot"><span>FRESHLY BREWED IN LA MARSA</span><span>DISCOVER THE MENU ↓</span></div></section>';
