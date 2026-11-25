@@ -1,0 +1,148 @@
+/* Independent compositions based on the visual direction of the selected references. */
+.reference-layout{height:100svh;min-height:760px;max-height:1080px}
+.reference-layout .brand-nav{z-index:20}
+.reference-layout h1,.reference-layout h2,.reference-layout p{margin:0}
+.reference-layout button{cursor:pointer}
+.reference-layout a:focus-visible,.reference-layout button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+
+/* Aura: architecture as the canvas, with a restrained typographic overlay. */
+.hero-aura.reference-layout{background:#756b64;color:#fff}
+.ref-aura-photo{position:absolute;inset:0;background-size:cover;background-position:center 58%;filter:sepia(.18)}
+.ref-aura-overlay{position:absolute;inset:0;background:linear-gradient(180deg,#12110e66,transparent 40%,#15110f8a),linear-gradient(90deg,#19151355,transparent 40%,#19151355)}
+.hero-aura.reference-layout .brand-nav{color:#fff}
+.hero-aura.reference-layout .brand{font:500 21px "DM Sans",sans-serif;letter-spacing:-.05em}
+.ref-aura-kicker{position:absolute;z-index:3;top:16%;left:4%;right:4%;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.16em}
+.hero-aura.reference-layout .ref-aura-name{position:absolute;z-index:4;inset:23% 2% auto;text-align:left;font:300 clamp(100px,15vw,250px)/.76 "DM Sans",sans-serif;letter-spacing:-.095em;color:#fff;pointer-events:none}
+.ref-aura-name span{display:block}.ref-aura-name span:last-child{text-align:right;margin-top:14%}
+.ref-aura-info{position:absolute;z-index:6;left:4%;bottom:12%;font-size:13px;line-height:1.5;max-width:240px}
+.ref-aura-info a{display:inline-block;margin-top:18px;border-bottom:1px solid #fff;padding-bottom:6px;font-size:10px;letter-spacing:.12em}
+.ref-aura-note{position:absolute;z-index:4;top:18%;right:4%;max-width:210px;text-align:right;font-size:12px;line-height:1.55}
+.ref-aura-progress{position:absolute;z-index:5;right:4%;bottom:9%;width:115px;height:115px;border:1px solid #fffa;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#2222;backdrop-filter:blur(5px)}
+.ref-aura-progress strong{font:300 30px "DM Sans",sans-serif}.ref-aura-progress span{font-size:8px;letter-spacing:.12em}
+.ref-aura-hotspots button{position:absolute;z-index:7;width:24px;height:24px;display:grid;place-items:center;border:0;border-radius:50%;background:#fff;color:#5b514b;font-size:19px;box-shadow:0 0 0 5px #fff4}
+.ref-aura-hotspots button:nth-child(1){left:43%;top:43%}.ref-aura-hotspots button:nth-child(2){left:59%;top:68%}.ref-aura-hotspots button:nth-child(3){left:78%;top:35%}
+.ref-aura-pop{position:absolute;z-index:8;left:50%;bottom:8%;transform:translateX(-50%);padding:12px 17px;background:#fff;color:#25201c;border-radius:30px;font-size:11px;opacity:0;transition:opacity .2s;white-space:nowrap}
+.ref-aura-pop.show{opacity:1}
+
+/* Brasa: warm orange and an oversized top-down coffee cup. */
+.hero-brasa.reference-layout{background:#bd5b00;color:#fff}
+.hero-brasa.reference-layout .brand-nav{color:#fff}
+.ref-brasa-top{position:absolute;z-index:3;top:15%;left:4%;right:4%;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.18em}
+.ref-brasa-title{position:absolute;z-index:6;top:19%;left:0;right:0;text-align:center}
+.ref-brasa-title small{font-size:10px;letter-spacing:.17em}
+.hero-brasa.reference-layout .ref-brasa-title h1{position:static;font:400 clamp(62px,7vw,118px)/1 "Bodoni Moda",serif;letter-spacing:-.06em;margin:4px 0}
+.ref-brasa-title p{font-size:13px;line-height:1.5}
+.ref-brasa-orbit{position:absolute;left:50%;top:80%;width:min(72vw,770px);aspect-ratio:1;border:1px solid #7833027a;border-radius:50%;transform:translate(-50%,-50%);display:flex;justify-content:space-around;padding:13px 12%;font-size:9px;letter-spacing:.14em}
+.ref-brasa-cup{position:absolute;z-index:4;top:88%;left:50%;width:min(57vw,650px);aspect-ratio:1;transform:translate(-50%,-50%);border:20px solid #faf3e7;border-radius:50%;overflow:hidden;box-shadow:0 28px 60px #58230080}
+.ref-brasa-cup img{width:100%;height:100%;object-fit:cover;object-position:center}
+.ref-brasa-beans{position:absolute;z-index:5;top:39%;color:#602b0c;font-size:32px;letter-spacing:.2em;transform:rotate(-20deg)}
+.beans-left{left:4%}.beans-right{right:4%;transform:rotate(25deg)}
+.ref-brasa-arrow{position:absolute;z-index:7;right:4%;bottom:14%;width:52px;height:52px;display:grid;place-items:center;border:1px solid #fff9;border-radius:50%;font-size:24px}
+.ref-brasa-foot{position:absolute;z-index:7;left:4%;right:4%;bottom:3%;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.16em}
+
+/* Bruma: one hero look and a dark product rail. */
+.hero-bruma.reference-layout{background:#dfe3f6;color:#171b2e}
+.hero-bruma.reference-layout .brand-nav{right:27%;padding-right:3%}
+.ref-bruma-editorial{position:absolute;inset:0;display:grid;grid-template-columns:73% 27%}
+.ref-bruma-stage{position:relative;overflow:hidden;background:#dfe3f6}
+.ref-bruma-stage>img{position:absolute;z-index:2;left:26%;top:15%;width:48%;height:79%;object-fit:cover;object-position:center top;mix-blend-mode:multiply;mask-image:linear-gradient(#000 75%,transparent)}
+.ref-bruma-ghost{position:absolute;top:32%;left:4%;font:800 clamp(110px,15vw,250px)/.8 "DM Sans",sans-serif;letter-spacing:-.095em;color:#bac9ef}
+.ref-bruma-stage-foot{position:absolute;z-index:4;left:4%;right:4%;bottom:5%;display:flex;align-items:end;justify-content:space-between}
+.ref-bruma-stage-foot span{font-size:9px;letter-spacing:.15em}
+.hero-bruma.reference-layout .ref-bruma-stage-foot h1{font:700 clamp(40px,4vw,70px)/.95 "DM Sans",sans-serif;letter-spacing:-.06em;max-width:320px}
+.ref-bruma-stage-foot a{font-size:10px;letter-spacing:.12em;border-bottom:1px solid;padding-bottom:7px}
+.ref-bruma-shop{position:relative;z-index:22;background:#161616;color:#fff;padding:20% 8% 4%;overflow:auto}
+.ref-bruma-shop h2{font:500 clamp(25px,2.7vw,45px) "DM Sans",sans-serif;letter-spacing:-.05em;margin-bottom:22px}
+.ref-bruma-shop button{width:100%;display:grid;grid-template-columns:19px 65px 1fr;grid-template-rows:1fr 1fr;column-gap:10px;align-items:center;background:none;border:0;border-top:1px solid #555;color:#fff;text-align:left;padding:13px 0;font-size:9px}
+.ref-bruma-shop button>span{grid-row:1/3}.ref-bruma-shop button img{grid-row:1/3;width:65px;height:87px;object-fit:cover;background:#e6e8eb}
+.ref-bruma-shop button strong{align-self:end;font-size:12px}.ref-bruma-shop button small{align-self:start;margin-top:7px;font-size:8px;letter-spacing:.1em}
+
+/* Ripe: warm fruit palette and a product-focused three-column layout. */
+.hero-ripe.reference-layout{background:#815112;color:#fff8e5;--ripe-hue:0deg}
+.ref-ripe-glow{position:absolute;inset:0;background:radial-gradient(circle at 52% 55%,#d4a349 0,#97631e 32%,#59350c 100%)}
+.ref-ripe-ghost{position:absolute;top:31%;left:12%;font:900 clamp(100px,14vw,220px) "DM Sans",sans-serif;letter-spacing:-.09em;color:#fff2;white-space:nowrap}
+.ref-ripe-left,.ref-ripe-right{position:absolute;z-index:5;top:51%;width:27%}.ref-ripe-left{left:5%}.ref-ripe-right{right:4%}
+.ref-ripe-left small{font-size:10px;letter-spacing:.17em}
+.hero-ripe.reference-layout .ref-ripe-left h1{font:800 clamp(35px,3.6vw,60px)/.98 "DM Sans",sans-serif;letter-spacing:-.07em;margin:14px 0}
+.ref-ripe-left p,.ref-ripe-right p{font-size:13px;line-height:1.55;max-width:300px}
+.ref-ripe-left a{display:inline-block;margin-top:24px;border-radius:30px;background:#fff3d7;color:#3d2b14;padding:13px 19px;font-size:10px;font-weight:800}
+.ref-ripe-product{position:absolute;z-index:4;left:33%;top:25%;width:34%;height:75%;overflow:hidden;clip-path:polygon(20% 0,80% 0,98% 100%,2% 100%);filter:hue-rotate(var(--ripe-hue)) drop-shadow(0 25px 30px #2c160c8a)}
+.ref-ripe-product img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-ripe.reference-layout .ref-ripe-right h2{font:800 clamp(27px,2.8vw,47px)/1 "DM Sans",sans-serif;letter-spacing:-.06em;margin-bottom:14px}
+.ref-ripe-flavours{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:35px}
+.ref-ripe-flavours button{height:82px;border:1px solid #fff7;border-radius:10px;background:#fff2;color:#fff;font-size:9px;line-height:1.7}
+.ref-ripe-flavours button.active{background:#fff3d7;color:#492c0d}
+
+/* Vyre: a row of individual garments on a single rail. */
+.hero-vyre.reference-layout{background:#e9e5dc;color:#23211e}
+.hero-vyre.reference-layout .brand-nav{justify-content:center}.hero-vyre.reference-layout .brand-nav nav,.hero-vyre.reference-layout .nav-action{display:none}
+.ref-vyre-top{position:absolute;top:20%;left:15%;right:15%;display:flex;justify-content:center;gap:25px;font-size:9px;letter-spacing:.17em}
+.ref-vyre-rail{position:absolute;top:26%;left:11%;right:11%;height:54%;display:flex;justify-content:space-around}
+.ref-vyre-line{position:absolute;top:0;left:0;right:0;height:2px;background:#8c8980}
+.ref-vyre-rail button{position:relative;width:15%;height:100%;background:none;border:0}
+.ref-vyre-hook{position:absolute;top:0;left:50%;width:2px;height:70px;background:#69675f}
+.ref-vyre-shirt{position:absolute;top:65px;left:0;width:100%;height:70%;clip-path:polygon(23% 0,38% 0,50% 7%,62% 0,77% 0,100% 20%,84% 34%,80% 100%,20% 100%,16% 34%,0 20%);background:linear-gradient(95deg,#eeeae2,#fff 40%,#d4d1ca);box-shadow:inset 25px 0 35px #7773}
+.shirt-2{background:linear-gradient(95deg,#d0c4a6,#f2e6cd,#b6a37c)}.shirt-3{background:linear-gradient(95deg,#d8d8d5,#fff,#aaa9a4)}.shirt-4{background:linear-gradient(95deg,#d5ccc4,#efe9e3,#a89d91)}.shirt-5{background:linear-gradient(95deg,#bebfba,#e1e3de,#90928c)}.shirt-6{background:linear-gradient(95deg,#e4d8c6,#f8f2e8,#baa68b)}
+.ref-vyre-rail button:hover .ref-vyre-shirt{transform:translateY(-10px);transition:transform .3s}
+.ref-vyre-floor{position:absolute;bottom:0;left:0;right:0;height:22%;background:#e2ddd3;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}
+.ref-vyre-floor p{font-size:12px}.hero-vyre.reference-layout .ref-vyre-floor h1{font:italic 400 clamp(32px,4vw,65px) "Bodoni Moda",serif;letter-spacing:-.04em;margin:7px}
+.ref-vyre-floor a{font-size:9px;letter-spacing:.14em;border-bottom:1px solid;padding-bottom:4px}
+
+/* Bruta: a bright poster with condensed outline type and a large burger. */
+.hero-bruta.reference-layout{background:#f4ead6;color:#c21b25}
+.ref-bruta-paper{position:absolute;inset:0;background:repeating-linear-gradient(25deg,#b9935c12 0 2px,transparent 2px 15px),radial-gradient(circle at 30% 30%,#fff9,#e8d9b8)}
+.hero-bruta.reference-layout .brand-nav .brand{font:italic 700 27px Georgia,serif}
+.ref-bruta-outline{position:absolute;z-index:2;top:24%;left:0;right:0;text-align:center;font:900 clamp(90px,12vw,200px)/.82 "Archivo Black",sans-serif;letter-spacing:-.09em;color:transparent;-webkit-text-stroke:3px #bd2027}
+.ref-bruta-script{position:absolute;z-index:6;left:27%;top:43%;font:italic 700 clamp(50px,6vw,95px) "Bodoni Moda",serif;color:#fff;text-shadow:2px 4px #b92d1d}
+.ref-bruta-burger{position:absolute;z-index:4;top:43%;left:50%;transform:translateX(-50%);width:min(39vw,550px);height:43%;border-radius:48%;overflow:hidden;mix-blend-mode:multiply;filter:contrast(1.1) saturate(1.2)}
+.ref-bruta-burger img{width:100%;height:100%;object-fit:cover}
+.ref-bruta-stamp{position:absolute;z-index:5;right:20%;top:45%;width:82px;height:82px;border:4px double #bc222a;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:13px;font-weight:900;transform:rotate(18deg)}
+.ref-bruta-bottom{position:absolute;z-index:5;bottom:5%;left:0;right:0;text-align:center}
+.hero-bruta.reference-layout .ref-bruta-bottom h1{position:static;font:900 clamp(100px,12vw,195px)/.8 "Archivo Black",sans-serif;color:#c21b25;-webkit-text-stroke:0;letter-spacing:-.08em}
+.ref-bruta-bottom p{font-size:10px;letter-spacing:.19em;margin:12px}.ref-bruta-bottom a{display:inline-block;border:2px solid;padding:9px 18px;border-radius:30px;font-size:10px;font-weight:800}
+
+/* Bocado: large wordmark and plates on a soft green canvas. */
+.hero-bocado.reference-layout{background:#c7dda4;color:#153412}
+.ref-bocado-shapes{position:absolute;inset:0;background:radial-gradient(circle at -4% 65%,#7ca65a66 0 8%,transparent 8.1%),radial-gradient(circle at 102% 37%,#79a55355 0 10%,transparent 10.1%)}
+.hero-bocado.reference-layout .brand-nav{color:#153412}
+.hero-bocado.reference-layout .nav-action{background:#153412;color:#fff}
+.hero-bocado.reference-layout .ref-bocado-logo{position:absolute;z-index:2;top:20%;left:2%;right:2%;font:900 clamp(130px,20vw,330px)/.8 Georgia,serif;letter-spacing:-.1em;white-space:nowrap}
+.ref-bocado-plates{position:absolute;z-index:4;inset:45% 0 0}
+.ref-bocado-plate{position:absolute;aspect-ratio:1;border:14px solid #e8e6dc;border-radius:50%;overflow:hidden;box-shadow:10px 24px 35px #38532655}
+.ref-bocado-plate img{width:100%;height:100%;object-fit:cover}
+.plate-main{width:42%;left:29%;top:-3%}.plate-left{width:28%;left:-8%;top:31%}.plate-right{width:28%;right:-8%;top:26%}
+.ref-bocado-bottom{position:absolute;z-index:6;bottom:3%;left:4%;right:4%;display:flex;justify-content:space-between;align-items:center;font-size:9px;font-weight:800;letter-spacing:.15em;color:#fff;text-shadow:0 2px 8px #1118}
+.ref-bocado-bottom a{background:#153412;border-radius:30px;padding:13px 19px;text-shadow:none}
+
+/* Aether: monochrome editorial copy and paired fashion imagery. */
+.hero-aether.reference-layout{background:#d7d7d7;color:#242424}
+.hero-aether.reference-layout .brand-nav{z-index:8}
+.ref-aether-copy{position:absolute;z-index:6;top:21%;left:4%;width:43%}
+.ref-aether-copy small{font-size:10px;letter-spacing:.2em}
+.hero-aether.reference-layout .ref-aether-copy h1{font:750 clamp(50px,5.2vw,88px)/.94 "DM Sans",sans-serif;letter-spacing:-.08em;margin:20px 0}
+.ref-aether-copy p{font-size:13px;max-width:280px;line-height:1.6}
+.ref-aether-copy a{display:inline-block;background:#171717;color:#fff;border-radius:40px;padding:11px 16px;margin-top:25px;font-size:10px}
+.ref-aether-copy a span{margin-left:20px}
+.ref-aether-models{position:absolute;z-index:2;top:13%;right:0;width:62%;height:88%;display:flex;align-items:end;filter:grayscale(.75)}
+.ref-aether-models>div{height:100%;width:50%;overflow:hidden;mask-image:linear-gradient(#000 80%,transparent)}
+.ref-aether-models>div:first-child{transform:translateX(14%) scale(.92)}
+.ref-aether-models img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.ref-aether-foot{position:absolute;bottom:3%;left:4%;right:4%;z-index:6;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.15em}
+
+@media(max-width:700px){
+  .reference-layout{min-height:660px;height:100svh}
+  .reference-layout .brand-nav{min-height:68px;padding:15px 5%}
+  .ref-aura-kicker{top:13%;font-size:8px}.ref-aura-kicker span{display:none}
+  .hero-aura.reference-layout .ref-aura-name{top:26%;font-size:20vw}.ref-aura-name span:last-child{margin-top:55%}
+  .ref-aura-info{bottom:11%;font-size:10px}.ref-aura-note{display:none}.ref-aura-progress{width:75px;height:75px;right:5%;bottom:7%}.ref-aura-progress strong{font-size:20px}.ref-aura-progress span{font-size:6px}
+  .ref-aura-hotspots button:nth-child(1){top:45%}.ref-aura-hotspots button:nth-child(2){top:58%}
+  .ref-brasa-title{top:16%}.ref-brasa-title p{font-size:10px;padding:0 8%}.ref-brasa-orbit{width:112vw;top:82%}.ref-brasa-cup{width:92vw;top:82%;border-width:12px}
+  .ref-brasa-beans{font-size:18px;top:43%}.ref-brasa-top{display:none}
+  .hero-bruma.reference-layout .brand-nav{right:0}.ref-bruma-editorial{display:block}.ref-bruma-stage{height:73%}.ref-bruma-stage>img{top:13%;left:14%;width:72%}.ref-bruma-ghost{font-size:22vw;top:28%}.ref-bruma-stage-foot{bottom:6%}.hero-bruma.reference-layout .ref-bruma-stage-foot h1{font-size:34px}.ref-bruma-stage-foot span{display:none}.ref-bruma-stage-foot a{font-size:8px}
+  .ref-bruma-shop{height:27%;padding:10px 4%;display:flex;gap:10px;align-items:center}.ref-bruma-shop h2{display:none}.ref-bruma-shop button{min-width:33%;grid-template-columns:35px 1fr;grid-template-rows:1fr 1fr;height:100%;padding:4px;gap:4px}.ref-bruma-shop button>span{display:none}.ref-bruma-shop button img{width:35px;height:65px}.ref-bruma-shop button strong{font-size:8px}.ref-bruma-shop button small{font-size:6px}
+  .ref-ripe-ghost{top:18%;font-size:20vw}.ref-ripe-left{top:22%;width:45%;left:5%}.hero-ripe.reference-layout .ref-ripe-left h1{font-size:32px}.ref-ripe-left p{font-size:9px}.ref-ripe-left a{font-size:8px;padding:10px}.ref-ripe-product{left:48%;top:22%;width:48%;height:52%}.ref-ripe-right{left:5%;right:5%;width:auto;top:auto;bottom:5%}.hero-ripe.reference-layout .ref-ripe-right h2{font-size:28px}.ref-ripe-right p{font-size:10px}.ref-ripe-flavours{margin-top:12px}.ref-ripe-flavours button{height:48px;font-size:8px}
+  .ref-vyre-top{top:18%;left:5%;right:5%;font-size:7px}.ref-vyre-rail{left:2%;right:2%;top:26%;height:52%}.ref-vyre-rail button{width:16%}.ref-vyre-hook{height:40px}.ref-vyre-shirt{top:39px;height:63%}.ref-vyre-floor{height:22%}.hero-vyre.reference-layout .ref-vyre-floor h1{font-size:37px}
+  .ref-bruta-outline{top:22%;font-size:16vw;-webkit-text-stroke:2px}.ref-bruta-burger{top:35%;width:85vw;height:38%}.ref-bruta-script{top:34%;left:10%;font-size:54px}.ref-bruta-stamp{right:5%;top:38%;width:60px;height:60px;font-size:9px}.hero-bruta.reference-layout .ref-bruta-bottom h1{font-size:17vw}.ref-bruta-bottom{bottom:7%}
+  .hero-bocado.reference-layout .ref-bocado-logo{top:25%;font-size:20vw}.ref-bocado-plates{inset:42% 0 0}.plate-main{width:80%;left:10%}.plate-left,.plate-right{width:45%;top:58%}.plate-left{left:-20%}.plate-right{right:-20%}.ref-bocado-bottom span{display:none}
+  .ref-aether-copy{top:18%;width:55%}.hero-aether.reference-layout .ref-aether-copy h1{font-size:10vw}.ref-aether-copy p{font-size:10px}.ref-aether-copy a{font-size:8px}.ref-aether-models{right:-14%;width:70%;height:70%;top:26%}.ref-aether-foot{font-size:8px}.ref-aether-foot span{display:none}
+}
