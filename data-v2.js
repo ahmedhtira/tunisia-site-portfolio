@@ -12,8 +12,8 @@ const DESIGNS = {
     title: "Aura Residencies", category: "Real estate", brand: "AURA", city: "Tunis",
     line: "A place to call extraordinary.", intro: "Thoughtful spaces for the way you want to live. Discover a new perspective on home.",
     accent: "#b7a78d", contact: "Explore residences",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=85",
-    extra: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=85",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=85",
+    extra: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000&q=85",
     items: [["01", "The architecture", "Considered from every angle"], ["02", "The spaces", "Room to live beautifully"], ["03", "The neighbourhood", "Connected to everything"]]
   },
   brasa: {
@@ -28,8 +28,9 @@ const DESIGNS = {
     title: "Bruma", category: "Fashion store", brand: "MIRA", city: "Tunis",
     line: "Nine looks. One floor.", intro: "The new collection is here. Pieces made for wherever your day takes you.",
     accent: "#aeb9dc", contact: "Shop the collection",
-    image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1600&q=90",
-    extra: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000&q=85",
+    image: "https://images.unsplash.com/photo-1639370225665-4c061b9f7e32?w=1600&q=90",
+    extra: "https://images.unsplash.com/photo-1605192554106-d549b1b975cd?w=1000&q=85",
+    thirdImage: "https://images.unsplash.com/photo-1517894775688-07292b9d37d3?w=1000&q=85",
     items: [["01", "Everyday layers", "Easy by design"], ["02", "The denim edit", "Wear it your way"], ["03", "New arrivals", "Find your next favourite"]]
   },
   ripe: {
@@ -44,7 +45,7 @@ const DESIGNS = {
     title: "Vyre", category: "Apparel", brand: "ATELIER 216", city: "Tunis",
     line: "Made to be worn your way.", intro: "An edit of essentials with a little more character. Small runs, considered details.",
     accent: "#e9c5b2", contact: "Explore the drop",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&q=90",
+    image: "https://images.unsplash.com/photo-1778671394516-8270eac13c42?w=1200&q=90",
     extra: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1000&q=85",
     items: [["01", "The essential tee", "Your daily uniform"], ["02", "The overshirt", "A little more texture"], ["03", "The next drop", "Coming soon"]]
   },
