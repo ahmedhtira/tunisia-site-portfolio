@@ -35,7 +35,7 @@
   if (key === "bruma") hero =
     '<section class="hero hero-bruma" id="top">' + nav(false) +
     '<div class="bruma-giant">NEW SEASON</div>' +
-    '<div class="bruma-figures"><div class="bruma-figure figure-one">' + photo(site.extra, "", "Fashion collection") + '</div><div class="bruma-figure figure-two">' + photo(site.image, "", "New season fashion") + '</div><div class="bruma-figure figure-three">' + photo(site.extra, "", "Fashion detail") + '</div></div>' +
+    '<div class="bruma-figures"><div class="bruma-figure figure-one">' + photo(site.extra, "", "Fashion collection") + '</div><div class="bruma-figure figure-two">' + photo(site.image, "", "New season fashion") + '</div><div class="bruma-figure figure-three">' + photo(site.thirdImage, "", "Fashion detail") + '</div></div>' +
     '<div class="bruma-bottom"><div><span>THE COLLECTION / 2026</span><h1>Wear the moment.</h1><p>' + e(site.intro) + '</p></div><a href="#menu" class="bruma-explore">EXPLORE THE DROP <span>↗</span></a></div></section>';
 
   if (key === "ripe") hero =
