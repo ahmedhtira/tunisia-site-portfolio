@@ -17,7 +17,7 @@ const DESIGNS = {
     items: [["01", "The architecture", "Considered from every angle"], ["02", "The spaces", "Room to live beautifully"], ["03", "The neighbourhood", "Connected to everything"]]
   },
   brasa: {
-    title: "Brasa", category: "Caf� & bakery", brand: "CAF� NOURA", city: "La Marsa",
+    title: "Brasa", category: "Café & bakery", brand: "CAFÉ NOURA", city: "La Marsa",
     line: "Good mornings start here.", intro: "Coffee worth slowing down for, fresh pastries, and a table waiting for you.",
     accent: "#f18405", contact: "Explore the menu",
     image: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=1500&q=90",
@@ -33,12 +33,12 @@ const DESIGNS = {
     items: [["01", "Everyday layers", "Easy by design"], ["02", "The denim edit", "Wear it your way"], ["03", "New arrivals", "Find your next favourite"]]
   },
   ripe: {
-    title: "Ripe", category: "Food & drink", brand: "PRESS�", city: "Tunis",
+    title: "Ripe", category: "Food & drink", brand: "PRESSÉ", city: "Tunis",
     line: "Fresh has a new flavour.", intro: "Fruit first. Nothing complicated. Just bright blends made to wake up your day.",
     accent: "#a8bb52", contact: "See the blends",
     image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=1500&q=90",
     extra: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=1000&q=85",
-    items: [["01", "Berry rush", "Strawberry � cherry � apple"], ["02", "Golden hour", "Mango � orange � ginger"], ["03", "Green glow", "Kiwi � mint � cucumber"]]
+    items: [["01", "Berry rush", "Strawberry · cherry · apple"], ["02", "Golden hour", "Mango · orange · ginger"], ["03", "Green glow", "Kiwi · mint · cucumber"]]
   },
   vyre: {
     title: "Vyre", category: "Apparel", brand: "ATELIER 216", city: "Tunis",
@@ -54,10 +54,10 @@ const DESIGNS = {
     accent: "#ce282a", contact: "See the menu",
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1500&q=90",
     extra: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000&q=85",
-    items: [["01", "The original", "Beef � cheddar � house sauce"], ["02", "The hot one", "A little fire in every bite"], ["03", "Crispy chicken", "Crunch first, questions later"]]
+    items: [["01", "The original", "Beef · cheddar · house sauce"], ["02", "The hot one", "A little fire in every bite"], ["03", "Crispy chicken", "Crunch first, questions later"]]
   },
   bocado: {
-    title: "Bocado", category: "Restaurant", brand: "BISTRO BAYA", city: "Sidi Bou Sa�d",
+    title: "Bocado", category: "Restaurant", brand: "BISTRO BAYA", city: "Sidi Bou Saïd",
     line: "Come hungry. Stay a while.", intro: "Food for the table, stories for the road, and something good in every bite.",
     accent: "#efb08f", contact: "Discover the menu",
     image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1500&q=90",
@@ -74,4 +74,3 @@ const DESIGNS = {
   }
 };
 const ALIASES = { cafe: "brasa", service: "aura", wellness: "lowlight", shop: "bruma" };
-
